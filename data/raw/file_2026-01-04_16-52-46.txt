@@ -1,0 +1,160 @@
+[
+  {
+    "partInfo" : null,
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "b389",
+      "productInformation" : {
+        "manufacturerName" : "Apple",
+        "modelName" : "",
+        "productIdentifier" : 21760,
+        "vendorIdentifier" : 76,
+        "antennaPower" : 4
+      }
+    },
+    "safeLocations" : [
+
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 1,
+    "serialNumber" : "HGFPWS0BP0GV",
+    "lostModeMetadata" : null,
+    "capabilities" : 254,
+    "identifier" : "83907033-EDD2-4856-9F89-FCED24AA6AC5",
+    "address" : {
+      "subAdministrativeArea" : "Maroondah City",
+      "label" : "4 Cart La",
+      "streetAddress" : "4",
+      "countryCode" : "AU",
+      "stateCode" : "VIC",
+      "administrativeArea" : "Victoria",
+      "streetName" : "Cart La",
+      "formattedAddressLines" : [
+        "4 Cart La",
+        "Ringwood East VIC 3135",
+        "Australia"
+      ],
+      "mapItemFullAddress" : "4 Cart La, Ringwood East VIC 3135",
+      "fullThroroughfare" : "4 Cart La",
+      "areaOfInterest" : [
+
+      ],
+      "locality" : "Ringwood East",
+      "country" : "Australia"
+    },
+    "location" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 145.2462817871025,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 19.820705712351533,
+      "latitude" : -37.820049831068026,
+      "timeStamp" : 1767505268000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "systemVersion" : "2.0.73",
+    "isAppleAudioAccessory" : false,
+    "crowdSourcedLocation" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 145.2462817871025,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 19.820705712351533,
+      "latitude" : -37.820049831068026,
+      "timeStamp" : 1767505268000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : null,
+    "role" : {
+      "name" : "Custom Name",
+      "emoji" : "🐈",
+      "identifier" : 999
+    },
+    "name" : "Garfield"
+  },
+  {
+    "partInfo" : null,
+    "isFirmwareUpdateMandatory" : false,
+    "productType" : {
+      "type" : "b389",
+      "productInformation" : {
+        "manufacturerName" : "Apple",
+        "modelName" : "",
+        "productIdentifier" : 21760,
+        "vendorIdentifier" : 76,
+        "antennaPower" : 4
+      }
+    },
+    "safeLocations" : [
+
+    ],
+    "owner" : "owner@localhost",
+    "batteryStatus" : 2,
+    "serialNumber" : "HGFPWS3UP0GV",
+    "lostModeMetadata" : null,
+    "capabilities" : 254,
+    "identifier" : "3B3674D6-247A-4A5A-9EFA-04DBEA840C66",
+    "address" : {
+      "subAdministrativeArea" : "Maroondah City",
+      "label" : "137 Bedford Rd",
+      "streetAddress" : "137",
+      "countryCode" : "AU",
+      "stateCode" : "VIC",
+      "administrativeArea" : "Victoria",
+      "streetName" : "Bedford Rd",
+      "formattedAddressLines" : [
+        "137 Bedford Rd",
+        "Ringwood East VIC 3135",
+        "Australia"
+      ],
+      "mapItemFullAddress" : "137 Bedford Rd, Ringwood East VIC 3135",
+      "fullThroroughfare" : "137 Bedford Rd",
+      "areaOfInterest" : [
+
+      ],
+      "locality" : "Ringwood East",
+      "country" : "Australia"
+    },
+    "location" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 145.24611900694384,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 25.787971640983763,
+      "latitude" : -37.820334193740294,
+      "timeStamp" : 1767505279000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "systemVersion" : "2.0.73",
+    "isAppleAudioAccessory" : false,
+    "crowdSourcedLocation" : {
+      "positionType" : "crowdsourced",
+      "verticalAccuracy" : -1,
+      "longitude" : 145.24611900694384,
+      "floorLevel" : -1,
+      "isInaccurate" : false,
+      "isOld" : false,
+      "horizontalAccuracy" : 25.787971640983763,
+      "latitude" : -37.820334193740294,
+      "timeStamp" : 1767505279000,
+      "altitude" : -1,
+      "locationFinished" : true
+    },
+    "groupIdentifier" : null,
+    "role" : {
+      "name" : "Keys",
+      "emoji" : "🔑",
+      "identifier" : 6
+    },
+    "name" : "Joseph’s Keys"
+  }
+]
