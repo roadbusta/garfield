@@ -27,8 +27,8 @@ def update_data():
                 # Update data rows
                 data_rows.append(
                     {"ts":ts_ms,
-                    "date":dt.strftime("%Y-%m-%d"),
-                    "time":dt.strftime("%H:%M:%S"),
+                    "date":dt.strftime("%A %d-%b-%y"),
+                    "time":dt.strftime("%I:%M %p"),
                     "lat":data[0]["location"]["latitude"],
                     "lon":data[0]["location"]["longitude"],
                     

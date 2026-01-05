@@ -27,7 +27,7 @@ if 'previous_date' not in st.session_state:
     st.session_state.previous_date = None
 
 # Streamlit selectbox for date selection
-selected_date = st.selectbox("Select date", date_list)
+selected_date = st.selectbox("Select date", date_list, index = len(date_list)-1) # Render to last list by default
 
 # Check if the date has changed, if so, reset the slider
 if selected_date != st.session_state.previous_date:
@@ -45,16 +45,16 @@ st.write("Use the slider to track Garfy's movements")
 if 'num_markers' not in st.session_state:
     st.session_state.num_markers = 1  # Set default slider value on first load
 
-num_markers = st.slider("Step", 1, len(df), st.session_state.num_markers)
+num_markers = st.slider("Step", 1, len(df), value = len(df)) # Render to last value by default
 
 # Get the time for the current marker (based on the slider position)
 current_time = df.iloc[num_markers - 1]['time']
 
 # Display the time under the slider
-st.write(f"Time at marker {num_markers}: {current_time}")
+st.write(f"Time: {current_time}")
 
 # Create the map centered at the first point
-m = folium.Map(location=[df["lat"].iloc[0], df["lon"].iloc[0]], zoom_start=17)
+m = folium.Map(location=[df["lat"].iloc[-1], df["lon"].iloc[-1]], zoom_start=18)
 
 # Store the coordinates for the polyline
 coordinates = []
