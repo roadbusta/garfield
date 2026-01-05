@@ -5,6 +5,8 @@ from streamlit_folium import st_folium
 import os
 
 
+
+
 # Streamlit layout and title
 st.title("Where is Garfield?")
 
@@ -69,7 +71,7 @@ for i, row in df.iloc[:num_markers].iterrows():
         folium.Marker(
             location=[row["lat"], row["lon"]],
             popup=f"<b>{row['time']}</b>",  # Timestamp in popup
-            icon=folium.DivIcon(html=f'<div style="font-size: 24px; color: black;">🐱</div>')  # Cat emoji
+            icon=folium.DivIcon(html=f'<div style="font-size: 40px; color: black;">🐈</div>')  # Cat emoji
         ).add_to(m)
     else:
         continue
