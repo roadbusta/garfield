@@ -8,7 +8,7 @@ from streamlit_folium import st_folium
 st.title("Where is Garfield?")
 
 # Load the dataframe
-original_df = pd.read_csv("../data/cleaned/locations.csv")
+original_df = pd.read_csv("locations.csv")
 
 # Unique dates list for selection
 date_list = original_df['date'].unique().tolist()
