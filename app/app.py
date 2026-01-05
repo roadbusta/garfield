@@ -2,14 +2,23 @@ import streamlit as st
 import folium
 import pandas as pd
 from streamlit_folium import st_folium
+import os
 
 
 # Streamlit layout and title
 st.title("Where is Garfield?")
 
-# Load the dataframe
-original_df = pd.read_csv("locations.csv")
+# Get the current directory of the app (app.py is inside the 'app' folder)
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
+# Go up one level from the 'app' folder to the root directory where locations.csv is
+file_path = os.path.join(current_dir, "../data/cleaned/locations.csv")
+
+# Check if the file exists before loading it
+if os.path.exists(file_path):
+    original_df = pd.read_csv(file_path)
+else:
+    st.error(f"File not found: {file_path}")
 # Unique dates list for selection
 date_list = original_df['date'].unique().tolist()
 
