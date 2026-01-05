@@ -48,5 +48,11 @@ def update_data():
         writer.writeheader()  # Writes the header row
         writer.writerows(unique_data_rows) # Writes all dictionary rows
 
+    # Export to csv "data/cleaned/locations.csv"
+    with open("../app/locations.csv", "w", newline='') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames=headers)
+        writer.writeheader()  # Writes the header row
+        writer.writerows(unique_data_rows) # Writes all dictionary rows
+
 if __name__=="__main__":
     update_data()
