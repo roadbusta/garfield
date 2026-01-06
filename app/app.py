@@ -28,6 +28,7 @@ date_list = original_df['date'].unique().tolist()
 if 'previous_date' not in st.session_state:
     st.session_state.previous_date = None
 
+
 # Streamlit selectbox for date selection
 selected_date = st.selectbox("Select date", date_list, index = len(date_list)-1) # Render to last list by default
 
