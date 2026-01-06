@@ -42,7 +42,6 @@ def update_data():
     # Sort by timestamp
     unique_data_rows.sort(key=lambda item: item['ts'])
     
-    print(unique_data_rows)
 
     # Export to csv "data/cleaned/locations.csv"
     with open("../data/cleaned/locations.csv", "w", newline='') as csvfile:
