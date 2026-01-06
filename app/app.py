@@ -57,7 +57,10 @@ current_time = df.iloc[num_markers - 1]['time']
 st.write(f"Time: {current_time}")
 
 # Create the map centered at the first point
-m = folium.Map(location=[df["lat"].iloc[-1], df["lon"].iloc[-1]], zoom_start=18)
+# m = folium.Map(location=[df["lat"].iloc[-1], df["lon"].iloc[-1]], zoom_start=18)
+m = folium.Map(location=[df["lat"].iloc[-1], df["lon"].iloc[-1]], zoom_start=18,
+               tiles='https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}',
+               attr='Google Satellite')
 
 # Store the coordinates for the polyline
 coordinates = []
