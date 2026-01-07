@@ -20,20 +20,38 @@ def update_data():
             with file_path.open("r", encoding="utf-8") as f:
                 data = json.load(f)
                 
-                # Convert time
-                ts_ms = data[0]["location"]["timeStamp"]
-                dt = datetime.fromtimestamp(ts_ms / 1000, tz=ZoneInfo("Australia/Melbourne"))
-                
-                # Update data rows
-                data_rows.append(
-                    {"ts":ts_ms,
-                    "date":dt.strftime("%A %d-%b-%y"),
-                    "time":dt.strftime("%I:%M %p"),
-                    "lat":data[0]["location"]["latitude"],
-                    "lon":data[0]["location"]["longitude"],
+                if data[0]["name"] == "Garfield":
+                    # Convert time
+                    ts_ms = data[0]["location"]["timeStamp"]
+                    dt = datetime.fromtimestamp(ts_ms / 1000, tz=ZoneInfo("Australia/Melbourne"))
                     
-                    }
-                                )
+                    # Update data rows
+                    data_rows.append(
+                        {"ts":ts_ms,
+                        "date":dt.strftime("%A %d-%b-%y"),
+                        "time":dt.strftime("%I:%M %p"),
+                        "lat":data[0]["location"]["latitude"],
+                        "lon":data[0]["location"]["longitude"],
+                        
+                        }
+                                    )
+                
+                else:
+                    # Convert time
+                    ts_ms = data[1]["location"]["timeStamp"]
+                    dt = datetime.fromtimestamp(ts_ms / 1000, tz=ZoneInfo("Australia/Melbourne"))
+                    
+                    # Update data rows
+                    data_rows.append(
+                        {"ts":ts_ms,
+                        "date":dt.strftime("%A %d-%b-%y"),
+                        "time":dt.strftime("%I:%M %p"),
+                        "lat":data[1]["location"]["latitude"],
+                        "lon":data[1]["location"]["longitude"],
+                        
+                        }
+                                    )
+                    
 
 
     # Remove duplicates
