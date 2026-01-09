@@ -15,15 +15,15 @@ Tracks Garfield's location using Apple's Find My network and visualizes movement
 5. **Manual Orchestration** - Laptop used to manage and coordinate the system components
 
 ## Usage
-### Set up bash script on MacMini
+### Step 1. Set up bash script on MacMini
 - Copy the script copy_v2.sh to the desktop of the MacMini
 - In terminal, navigate to the desktop and run the following command to add executable permissions: `chmod +x copy_v2.sh`
 - Then run the following command to run the script: `./copy_v2.sh`
 
-### Update location
+### Step 2. Update location
 - Pull the latest raw data in GitHub
 - Run the python program: `main/processor.py'
 - Push the changes to GitHub
   
-### Update Streamlit
+### Step 3.Update Streamlit
 - Go to Streamlit community, then Reboot the app
