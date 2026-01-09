@@ -2,8 +2,14 @@
 
 Tracks Garfield's location using Apple's Find My network and visualizes movement history on an interactive map.
 
+## Architecture
+
+![Architecture Diagram](architecture.png)
+
 ## How it works
 
-1. `scripts/copy.sh` - Periodically copies location data from Apple's Find My cache
-2. `main/processor.py` - Processes raw JSON files and exports cleaned location data to CSV
-3. `app/app.py` - Streamlit app that displays locations on a map with a slider to view movement over time
+1. **AirTag** - Attached to Garfield, broadcasts location via Apple's Find My network
+2. **MacMini** - Runs a bash script that periodically reads location data from Apple's cache and pushes it to GitHub
+3. **GitHub** - Stores location history as the central data repository
+4. **Streamlit** - Web app that reads from GitHub and displays Garfield's movement on an interactive map
+5. **Manual Orchestration** - Laptop used to manage and coordinate the system components
